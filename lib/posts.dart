@@ -10,7 +10,7 @@ class PostsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Surah"),
+        title: const Text("Surah Al-qur'an"),
       ),
       body: FutureBuilder<List<Post>>(
         future: httpService.getPosts(),
