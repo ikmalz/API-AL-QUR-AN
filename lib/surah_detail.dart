@@ -24,12 +24,16 @@ class SurahDetail extends StatelessWidget {
           children: [
             Text(
               "${post.number}. ${post.name} (${post.englishName})",
-              style: const TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
+              style:
+                  const TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 16.0),
-            Text("Jumlah Ayat: ${post.numberOfAyahs}", style: const TextStyle(fontSize: 16.0)),
-            Text("Tempat Turun: ${post.revelationType}", style: const TextStyle(fontSize: 16.0)),
-            Text("Arti: ${post.englishNameTranslation}", style: const TextStyle(fontSize: 16.0)),
+            Text("Jumlah Ayat: ${post.numberOfAyahs}",
+                style: const TextStyle(fontSize: 16.0)),
+            Text("Tempat Turun: ${post.revelationType}",
+                style: const TextStyle(fontSize: 16.0)),
+            Text("Arti: ${post.englishNameTranslation}",
+                style: const TextStyle(fontSize: 16.0)),
             const SizedBox(height: 16.0),
             const Text(
               "Ayat-ayat:",
@@ -46,7 +50,8 @@ class SurahDetail extends StatelessWidget {
                     children: [
                       Text(
                         "Page: $page",
-                        style: const TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold),
+                        style: const TextStyle(
+                            fontSize: 16.0, fontWeight: FontWeight.bold),
                       ),
                       const SizedBox(height: 8.0),
                       ...ayats.map((ayat) {
